@@ -1,4 +1,4 @@
-9095d1d7c489e5483c6b201c02b95401 *DESCRIPTION
+48dd7adbcda3a54bdc744968b7279ff4 *DESCRIPTION
 930503474a5557d958735c96c14d127b *NAMESPACE
 1299586d5e92d07523397e9449caddf5 *R/AtrialFibrillation.R
 b11c093394b48620fc7bb691eaac161f *R/BasicMotions.R
@@ -63,7 +63,7 @@ e7d9436aec05e626c566a1b48d31f915 *R/outlier_detection.R
 4071808505923939e724ebdbc51c930f *R/package-mlmts.R
 a27db8c65a932dbd4fe5a4063f0a624a *R/plot_2d_scaling.R
 e4061da192edbcdadd6337b018788dfc *R/vpca_clustering.R
-9b7120d0d01b80ea704ac63ed6624f0b *build/partial.rdb
+27f3a00151fa6c4678b376b1c2872221 *build/partial.rdb
 2440f4892eb8af722910301136096d63 *data/AtrialFibrillation.RData
 764a5ce6aa9c81b21b91c8a5e2d62b8a *data/BasicMotions.RData
 0a163f5c2d1696dca693bd4d94df54ae *data/ERing.RData

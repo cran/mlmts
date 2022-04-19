@@ -1,7 +1,7 @@
 Package: mlmts
 Type: Package
 Title: Machine Learning Algorithms for Multivariate Time Series
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Angel", "Lopez-Oriona", email = "oriona38@hotmail.com", 
     role = c("aut", "cre")),
@@ -26,11 +26,11 @@ Imports: quantspec, waveslim, Rfast, TSclust, forecast, tseries, TSA,
         stats, ClusterR, AID, caret, ranger
 RdMacros: Rdpack
 NeedsCompilation: no
-Packaged: 2022-02-18 23:36:13 UTC; angel
+Packaged: 2022-04-18 07:40:42 UTC; angel
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Author: Angel Lopez-Oriona [aut, cre],
   Jose A. Vilar [aut]
 Maintainer: Angel Lopez-Oriona <oriona38@hotmail.com>
 Repository: CRAN
-Date/Publication: 2022-02-21 08:50:05 UTC
+Date/Publication: 2022-04-19 14:42:29 UTC
