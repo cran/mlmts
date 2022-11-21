@@ -16,8 +16,9 @@
 #' # dataset AtrialFibrillation
 #' distance_matrix <- dis_dtw_1(toy_dataset) # Computing the pairwise
 #' # distance matrix based on the distance dis_dtw_1 without normalization
-#' distance_matrix_normalized <- dis_dtw_1(toy_dataset, normalization = TRUE) # Computing the pairwise
-#' # distance matrix based on the distance dis_dtw_1 with normalization
+#' distance_matrix_normalized <- dis_dtw_1(toy_dataset, normalization = TRUE)
+#' # Computing the pairwise distance matrix based
+#' # on the distance dis_dtw_1 with normalization
 #' @details
 #' Given a collection of MTS, the function returns the pairwise distance matrix,
 #' where the distance between two MTS is defined as the sum of the standard

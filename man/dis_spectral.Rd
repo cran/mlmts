@@ -23,8 +23,9 @@ Chernoff divergence (default is 0.5).}
 returns a dataset of feature vectors.}
 }
 \value{
-If \code{features = FALSE} (default), returns a distance matrix based on the distance \eqn{d_{JSPEC}}
-if \code{method="j_divergence"}, and based on the distance \eqn{d_{CSPEC}} if \code{method="chernoff_divergence"}.
+If \code{features = FALSE} (default), returns a distance matrix based on the distance
+\eqn{d_{JSPEC}} as long as we set \code{method="j_divergence"}, and based on the alternative distance \eqn{d_{CSPEC}} as long as we set \code{method=}
+\code{"chernoff_divergence"}.
 Otherwise, if \code{features = TRUE}, the function returns a dataset of feature vectors, i.e., each row in the dataset
 contains the features employed to compute either \eqn{d_{JSPEC}} or \eqn{d_{CSPEC}}. These vectors
 are vectorized versions of the estimated spectral matrices.

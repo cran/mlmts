@@ -29,10 +29,10 @@ Given a collection of MTS, the function returns the pairwise distance matrix,
 where the distance between two MTS \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T} is defined
 as
 \deqn{d_{GCC}(\boldsymbol X_T, \boldsymbol Y_T)=\Bigg[\sum_{j_1,j_2=1, j_1 \ne j_2}^{d}
-\bigg(GCC(\boldsymbol X_{T,j_1}, \boldsymbol X_{T,j_2} )-GCC(\boldsymbol Y_{T,j_1},\boldsymbol Y_{T,j_2})\bigg)^2\Bigg]^{1/2},}
+\bigg(\widehat{GCC}(\boldsymbol X_{T,j_1}, \boldsymbol X_{T,j_2} )-\widehat{GCC}(\boldsymbol Y_{T,j_1},\boldsymbol Y_{T,j_2})\bigg)^2\Bigg]^{1/2},}
 where \eqn{\boldsymbol X_{T,j}} and \eqn{\boldsymbol Y_{T,j}} are the \eqn{j}th dimensions (univariate time series) of
-\eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T}, respectively, and \eqn{GCC(\cdot, \cdot)} is the genelarized cross-correlation
-measure between univariate series proposed by .
+\eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T}, respectively, and \eqn{\widehat{GCC}(\cdot, \cdot)} is the estimated genelarized cross-correlation
+measure between univariate series proposed by \insertCite{alonso2019clustering;textual}{mlmts}.
 }
 \examples{
 toy_dataset <- AtrialFibrillation$data[1 : 10] # Selecting the first 10 MTS from the

@@ -25,8 +25,17 @@
 #' # the corresponding dataset of features
 #' @details
 #' Given a collection of MTS, the function returns the pairwise distance matrix,
-#' where the distance between two MTS \eqn{\boldsymbol X_T^{(1)}} and \eqn{\boldsymbol X_T^{(2)}} is defined
-#' as  \deqn{d_{Eros}(\boldsymbol X_T^{(1)}, \boldsymbol X_T^{(2)}}
+#' where the distance between two MTS \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T} is defined
+#' as
+#' \deqn{d_{2dSVD}(\boldsymbol X_T, \boldsymbol Y_T)=\sum_{b=1}^s||{\boldsymbol M}^{\boldsymbol X_T}_{\bullet, b}-
+#' {\boldsymbol M}^{\boldsymbol Y_T}_{\bullet, b}||,}
+#' where \eqn{{\boldsymbol M}^{\boldsymbol X_T}_{\bullet, b}} and \eqn{{\boldsymbol M}^{\boldsymbol Y_T}_{\bullet, b}} are the
+#' \eqn{b}th columns of matrices \eqn{{\boldsymbol M}^{\boldsymbol X_T}}
+#' and \eqn{{\boldsymbol M}^{\boldsymbol Y_T}}, which are obtained by
+#' decomposing the time series \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T}, respectively,
+#' by means of the 2dSVD procedure (average row-row and column-column covariance matrices
+#' are taken into account), and \eqn{s} is the number of first retained eigenvectors
+#' concerning the average column-column covariance matrices.
 #' @encoding UTF-8
 #' @author
 #' Ángel López-Oriona, José A. Vilar

@@ -14,7 +14,7 @@
 #' @examples
 #' distance_matrix_qcd <- dis_qcd(SyntheticData1$data[1 : 30]) # Computing the pairwise
 #' # distance matrix for the first 30 elements in dataset SyntheticData1 based on dis_qcd
-#' plot_2d_scaling(distance_matrix_qcd, cluster_labels = SyntheticData1$classes)
+#' plot_2d_scaling(distance_matrix_qcd, cluster_labels = SyntheticData1$classes[1 : 30])
 #' # Constructing the corresponding 2d-scaling plot. Each class is represented
 #' # in a different colour
 #' @details
@@ -43,14 +43,13 @@ plot_2d_scaling <- function(distance_matrix, cluster_labels = NULL, title = '') 
     X1 <- df$X1
     X2 <- df$X2
     plot <- ggplot2::ggplot(df, ggplot2::aes(x = X1, y = X2)) + ggplot2::geom_point(size = 2.5, col = 'blue') +
-      ggplot2::scale_color_discrete(labels = vector_labels) +
       ggplot2::xlab('Coordinate 1') + ggplot2::ylab('Coordinate 2') +
       ggplot2::theme(axis.text = ggplot2::element_text(size = 15),
             axis.title = ggplot2::element_text(size = 17),
             plot.title = ggplot2::element_text(hjust = 0.5,  size = 18),
             legend.position = 'bottom', legend.title = ggplot2::element_blank(),
             legend.text = ggplot2::element_text(size = 12)) + ggplot2::ggtitle(title)
-    return_list <- list(plot = plot, gof = gof)
+    return_list <- list(plot = plot, coordinates_2d = mds$points, gof = gof)
     return(return_list)
 
 
@@ -76,7 +75,7 @@ plot_2d_scaling <- function(distance_matrix, cluster_labels = NULL, title = '') 
             plot.title = ggplot2::element_text(hjust = 0.5,  size = 18),
             legend.position = 'bottom', legend.title = ggplot2::element_blank(),
             legend.text = ggplot2::element_text(size = 12)) + ggplot2::ggtitle(title)
-    return_list <- list(plot = plot, gof = gof)
+    return_list <- list(plot = plot, coordinates_2d = mds$points, gof = gof)
     return(return_list)
 
 

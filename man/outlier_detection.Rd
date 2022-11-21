@@ -30,7 +30,7 @@ by \insertCite{lopez2021outlier;textual}{mlmts}.
 }
 \details{
 This function performs outlier detection according to the procedure proposed
-by . Specifically, each MTS in the original set is described by means of
+by \insertCite{lopez2021outlier;textual}{mlmts}. Specifically, each MTS in the original set is described by means of
 a multivariate functional datum by using an estimate of its quantile cross- spectral
  density. Given the corresponding set of multivariate
 functional data, the functional depth of each object is computed. Based on

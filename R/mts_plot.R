@@ -29,17 +29,52 @@ mts_plot <- function(series, title = ''){
   temp_df <- NULL
   n <- nrow(df_series)
   c <- ncol(df_series)
-  for(i in 1 : c){
 
-    temp_df <- data.frame(x = 1:n, y = df_series[,i], col = rep(i, n))
-    df <- rbind(df,temp_df)}
-    x <- df$x
-    y <- df$y
-    ggplot2::ggplot(df, ggplot2::aes(x = x, y = y, group = col, colour = factor(col))) + ggplot2::geom_line(size = 0.8) + ggplot2::xlab('') +
+  for (i in 1 : c) {
+
+    temp_df <- data.frame(x = 1 : n, y = df_series[,i], col = rep(i, n))
+    df <- rbind(df,temp_df)
+
+  }
+
+  x <- df$x
+  y <- df$y
+
+
+  if (c > 5) {
+
+    figure <- ggplot2::ggplot(df, ggplot2::aes(x = x, y = y, group = col, colour = factor(col))) + ggplot2::geom_line(size = 0.8) + ggplot2::xlab('') +
     ggplot2::ylab('') + ggplot2::theme(legend.position = "none") + ggplot2::ggtitle(title) + ggplot2::theme(legend.title = ggplot2::element_blank(),
                                                                         legend.text = ggplot2::element_text(size = 14),
                                                                         axis.text = ggplot2::element_text(size = 14),
                                                                         axis.title = ggplot2::element_text(size = 14),
                                                                         plot.title = ggplot2::element_text(hjust = 0.5, size = 18))
+
+
+    return(figure) } else {
+
+      vector_labels <- numeric()
+
+      for (i in 1 : c) {
+
+        vector_labels[i] <- paste('UTS', i)
+
+      }
+
+
+      figure <- ggplot2::ggplot(df, ggplot2::aes(x = x, y = y, group = col, colour = factor(col))) + ggplot2::geom_line(size = 0.8) + ggplot2::xlab('') +
+        ggplot2::ylab('') + ggplot2::theme(legend.position = "bottom") + ggplot2::ggtitle(title) + ggplot2::theme(legend.title = ggplot2::element_blank(),
+                                                                                                                legend.text = ggplot2::element_text(size = 14),
+                                                                                                                axis.text = ggplot2::element_text(size = 14),
+                                                                                                                axis.title = ggplot2::element_text(size = 14),
+                                                                                                                plot.title = ggplot2::element_text(hjust = 0.5, size = 18)) +
+        ggplot2::scale_color_discrete(labels = vector_labels)
+
+      return(figure)}
+
+
+
+
+
 }
 

@@ -23,13 +23,13 @@
 #' # the corresponding dataset of features
 #' @details
 #' Given a collection of MTS, the function returns the pairwise distance matrix,
-#' where the distance between two MTS \eqn{\boldsymbol X_T^{(i)}} and \eqn{\boldsymbol X_T^{(j)}} is defined
-#' as  \deqn{d_{SWMD}(\boldsymbol X_T^{(i)}, \boldsymbol X_T^{(j)})=\Big[\big(vec
-#' (\boldsymbol Y_i)-vec(\boldsymbol Y_j)\big)\boldsymbol
-#' S\big(vec(\boldsymbol Y_i)-vec(\boldsymbol Y_j)\big)^\top\Big]^{1/2},}
-#' where \eqn{\boldsymbol Y_i} and \eqn{\boldsymbol Y_j} are the dimensionality-
-#' reduced MTS samples associated with \eqn{\boldsymbol X_T^{(i)}} and
-#' \eqn{\boldsymbol X_T^{(j)}}, respectively, the operator \eqn{vec(\cdot)}
+#' where the distance between two MTS \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T} is defined
+#' as  \deqn{d_{SWMD}(\boldsymbol X_T, \boldsymbol Y_T)=\Big[\big(vec
+#' (\boldsymbol Z^{\boldsymbol X_T})-vec(\boldsymbol Z^{\boldsymbol Y_T})\big)\boldsymbol
+#' S\big(vec(\boldsymbol Z^{\boldsymbol X_T})-vec(\boldsymbol Z^{\boldsymbol Y_T})\big)^\top\Big]^{1/2},}
+#' where \eqn{\boldsymbol Z^{\boldsymbol X_T}} and \eqn{\boldsymbol Z^{\boldsymbol Y_T}} are the dimensionality-
+#' reduced MTS samples associated with \eqn{\boldsymbol X_T} and
+#' \eqn{\boldsymbol Y_T}, respectively, the operator \eqn{vec(\cdot)}
 #' creates a vector by concatenating the columns of the matrix received as input
 #' and \eqn{\boldsymbol S} is a matrix integrating the spatial dimensionality
 #' difference between the corresponding elements.

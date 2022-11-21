@@ -40,7 +40,7 @@ A list with three elements:
 \item \code{U}. If \code{crisp = FALSE} (default), the membership matrix. Otherwise,
 a vector defining the corresponding crisp partition.
 \item \code{centroids}. If \code{crisp = FALSE} (default), a list containing the
-centroid series, which are dimensionality-reduced averaged MTS. Otherwise, this
+series playing the role of centroids, which are dimensionality-reduced averaged MTS. Otherwise, this
 element is not returned.
 \item \code{iterations}. The number of iterations before the algorithm
 stopped.

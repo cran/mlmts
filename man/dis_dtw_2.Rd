@@ -20,7 +20,7 @@ distance is computed. Otherwise (default), no normalization is taken into accoun
 The computed pairwise distance matrix.
 }
 \description{
-\code{dis_dtw1} returns a pairwise distance matrix based on one of the multivariate
+\code{dis_dtw_2} returns a pairwise distance matrix based on one of the multivariate
 extensions of the well-known dynamic time warping distance \insertCite{shokoohi2017generalizing}{mlmts}.
 }
 \details{
@@ -34,7 +34,8 @@ toy_dataset <- AtrialFibrillation$data[1 : 10] # Selecting the first 10 MTS from
 # dataset AtrialFibrillation
 distance_matrix <- dis_dtw_2(toy_dataset) # Computing the pairwise
 # distance matrix based on the distance dis_dtw1 without normalization
-distance_matrix_normalized <- dis_dtw_2(toy_dataset, normalization = TRUE) # Computing the pairwise
+distance_matrix_normalized <- dis_dtw_2(toy_dataset, normalization = TRUE)
+# Computing the pairwise distance matrix based
 # distance matrix based on the distance dis_dtw1 with normalization
 }
 \references{

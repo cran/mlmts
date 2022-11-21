@@ -34,7 +34,7 @@ given class labels.
 \examples{
 distance_matrix_qcd <- dis_qcd(SyntheticData1$data[1 : 30]) # Computing the pairwise
 # distance matrix for the first 30 elements in dataset SyntheticData1 based on dis_qcd
-plot_2d_scaling(distance_matrix_qcd, cluster_labels = SyntheticData1$classes)
+plot_2d_scaling(distance_matrix_qcd, cluster_labels = SyntheticData1$classes[1 : 30])
 # Constructing the corresponding 2d-scaling plot. Each class is represented
 # in a different colour
 }

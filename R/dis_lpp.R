@@ -28,15 +28,15 @@
 #' # the corresponding dataset of features
 #' @details
 #' Given a collection of MTS, the function returns the pairwise distance matrix,
-#' where the distance between two MTS \eqn{\boldsymbol X_T^{(i)}} and \eqn{\boldsymbol X_T^{(j)}}
+#' where the distance between two MTS \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T}
 #' is defined as
-#' \deqn{d_{LPP}(\boldsymbol X_T^{(i)}, \boldsymbol X_T^{(j)})=
-#' \big| \big| {\boldsymbol \varphi^{(i)}
-#' \boldsymbol A_{LPP}  - \boldsymbol \varphi^{(j)} \boldsymbol A_{LPP}} \big| \big|,}
-#' where \eqn{\boldsymbol \varphi^{(i)}} and \eqn{\boldsymbol \varphi^{(j)}} are the feature
+#' \deqn{d_{LPP}(\boldsymbol X_T, \boldsymbol Y_T)=
+#' \big| \big| {\boldsymbol \varphi^{\boldsymbol X_T}
+#' \boldsymbol A_{LPP}  - \boldsymbol \varphi^{\boldsymbol Y_T} \boldsymbol A_{LPP}} \big| \big|,}
+#' where \eqn{\boldsymbol \varphi^{\boldsymbol X_T}} and \eqn{\boldsymbol \varphi^{\boldsymbol Y_T}} are the feature
 #' vectors constructed from Li's first (\code{approach=1}) or Li's second (\code{approach=2})
-#' approach with respect to series \eqn{\boldsymbol X_T^{(i)}}
-#' and \eqn{\boldsymbol X_T^{(j)}}, respectively
+#' approach with respect to series \eqn{\boldsymbol X_T}
+#' and \eqn{\boldsymbol Y_T}, respectively
 #' and \eqn{\boldsymbol A_{LPP}} is the matrix of locality preserving projections
 #' whose columns are eigenvectors solving the generalized eigenvalue problem defined
 #' by matrix \eqn{\boldsymbol S}.

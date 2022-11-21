@@ -34,8 +34,9 @@ toy_dataset <- AtrialFibrillation$data[1 : 5] # Selecting the first 5 MTS from t
 # dataset AtrialFibrillation
 distance_matrix <- dis_dtw_1(toy_dataset) # Computing the pairwise
 # distance matrix based on the distance dis_dtw_1 without normalization
-distance_matrix_normalized <- dis_dtw_1(toy_dataset, normalization = TRUE) # Computing the pairwise
-# distance matrix based on the distance dis_dtw_1 with normalization
+distance_matrix_normalized <- dis_dtw_1(toy_dataset, normalization = TRUE)
+# Computing the pairwise distance matrix based
+# on the distance dis_dtw_1 with normalization
 }
 \references{
 {
