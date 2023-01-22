@@ -54,7 +54,20 @@ dis_pca <- function(X, retained_components = 3) {
   # Computation of the distance matrix
 
   list_cov_matrices <- lapply(X, stats::cov)
-  dis_matrix_pca <- 1 - evolqg::PCAsimilarity(list_cov_matrices, ret.dim = retained_components)
+
+  dis_matrix_pca <- matrix(0, l, l)
+
+  for (i in 1 : l) {
+
+    for(j in 1 : l) {
+
+      dis_matrix_pca[i, j] <- 1 - PCAsimilarity(list_cov_matrices[[i]],
+                                                list_cov_matrices[[j]], ret.dim = retained_components)
+
+    }
+
+  }
+
   dis_matrix_pca[col(dis_matrix_pca) >= row(dis_matrix_pca)] <- 0
   stats::as.dist(dis_matrix_pca)
 

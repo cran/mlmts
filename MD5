@@ -1,4 +1,4 @@
-57db21a97b71e6317ac17e30c59fd959 *DESCRIPTION
+6266ad0a90de4c02b19cb2ec027d7072 *DESCRIPTION
 50849681a567cbe14e503e42871d6cdd *NAMESPACE
 1bda8cb97ee012c088ec36414c0d8ec7 *R/ArticularlyWordRecognition.R
 1299586d5e92d07523397e9449caddf5 *R/AtrialFibrillation.R
@@ -46,6 +46,7 @@ ac01a440085e827a0a0deade275c88d3 *R/auxiliary_lpp_function.R
 2ddd2a1a1372323e09e6d972feb0372e *R/auxiliary_mc2pca_function.R
 eea9e1f1752f7863beca2261f2131aeb *R/auxiliary_mcc_function.R
 467d8881d1087cb661eb95494303b8ad *R/auxiliary_modwt_function.R
+2c867de5933406f3a6b5c9720fb3416f *R/auxiliary_pca_function.R
 9c6ce8f2de0d4bad471390d311b5abaa *R/auxiliary_ppca_function.R
 0643ffbaae4122de3e57a217ecd37071 *R/auxiliary_qaf_function.R
 a438799a7b6f8974c0fe15d70d68df61 *R/auxiliary_qcd_function.R
@@ -71,9 +72,9 @@ b91603fd28eaf760a2eb9779db4b7b85 *R/dis_eucl.R
 952e110f4fca68247e0c214a253a64b0 *R/dis_mahalanobis_dtw.R
 b195ada0d757cf15907c0bed5938e276 *R/dis_mcc.R
 197a391fdf08eb7c1463e36995387454 *R/dis_modwt.R
-136c55c80958089a050bfd0c3c85f6a7 *R/dis_pca.R
+4fcc4121ebc07c5ff034b2dbcf32829b *R/dis_pca.R
 b2bedae284cc6648b13d691d0e619ef0 *R/dis_ppca.R
-f2d814f6ee6d2b3b23500596f399d7fd *R/dis_qcd.R
+b407d2616997ac2f7c382773eb168a63 *R/dis_qcd.R
 c2f6c3963537b18f955b91bf1b95eb2c *R/dis_qcf.R
 7689bdf4215d60c537408067ff072adf *R/dis_spectral.R
 bb22c8077441ea9e33e40df975de6c63 *R/dis_swmd.R
@@ -92,7 +93,7 @@ e51e26aa3029e5ad3bd0e0c4307005f2 *R/outlier_detection.R
 4071808505923939e724ebdbc51c930f *R/package-mlmts.R
 8b6d747e2b303872b7fd4fbf3b50ac70 *R/plot_2d_scaling.R
 54f88fb1b657c8762f22628476c0aee0 *R/vpca_clustering.R
-b6cf8ecfd6fbda61747377f3bc407e15 *build/partial.rdb
+051197c97d83f01382b5bf131b1add32 *build/partial.rdb
 552332e3a0904a7444911d2d18963faa *data/ArticularlyWordRecognition.RData
 2440f4892eb8af722910301136096d63 *data/AtrialFibrillation.RData
 764a5ce6aa9c81b21b91c8a5e2d62b8a *data/BasicMotions.RData
@@ -179,7 +180,7 @@ cd6e22379669260a914e6c986d6d9902 *man/dis_hwl.Rd
 b5151b67d680333a5c67ad3467fcb511 *man/dis_modwt.Rd
 8c3adcfd165b2be6d2c18440fe62c0da *man/dis_pca.Rd
 ae2fb1dd0b8303444369ef531bd90e13 *man/dis_ppca.Rd
-c24af19d1f7df147ccd8ec0cd8fc82d4 *man/dis_qcd.Rd
+3ed3f3651cb95dc402b38859468b58e5 *man/dis_qcd.Rd
 8bafb26613b4338924f0945a3c51123c *man/dis_qcf.Rd
 72cd426051d72d66eefb031b745ef683 *man/dis_spectral.Rd
 6fee4adaa0fd290ea15b9d29d9b88881 *man/dis_swmd.Rd

@@ -18,7 +18,7 @@
 #' returns a dataset of feature vectors, i.e., each row in the dataset contains the features employed to compute the
 #' distance \eqn{d_{QCF}}.
 #' @examples
-#' toy_dataset <- AtrialFibrillation$data[1 : 5] # Selecting the first 5 MTS from the
+#' toy_dataset <- AtrialFibrillation$data[1 : 4] # Selecting the first 4 MTS from the
 #' # dataset AtrialFibrillation
 #' distance_matrix <- dis_qcd(toy_dataset) # Computing the pairwise
 #' # distance matrix based on the distance dis_qcd

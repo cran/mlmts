@@ -48,7 +48,7 @@ series \eqn{\boldsymbol X_T} and \eqn{\boldsymbol Y_T}, respectively, and \eqn{\
 denote the real part and imaginary part operators, respectively.
 }
 \examples{
-toy_dataset <- AtrialFibrillation$data[1 : 5] # Selecting the first 5 MTS from the
+toy_dataset <- AtrialFibrillation$data[1 : 4] # Selecting the first 4 MTS from the
 # dataset AtrialFibrillation
 distance_matrix <- dis_qcd(toy_dataset) # Computing the pairwise
 # distance matrix based on the distance dis_qcd
