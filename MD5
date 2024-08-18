@@ -1,4 +1,4 @@
-6266ad0a90de4c02b19cb2ec027d7072 *DESCRIPTION
+6c08ebe47c7faed7fdc0afaae2f76b25 *DESCRIPTION
 50849681a567cbe14e503e42871d6cdd *NAMESPACE
 1bda8cb97ee012c088ec36414c0d8ec7 *R/ArticularlyWordRecognition.R
 1299586d5e92d07523397e9449caddf5 *R/AtrialFibrillation.R
@@ -93,7 +93,7 @@ e51e26aa3029e5ad3bd0e0c4307005f2 *R/outlier_detection.R
 4071808505923939e724ebdbc51c930f *R/package-mlmts.R
 8b6d747e2b303872b7fd4fbf3b50ac70 *R/plot_2d_scaling.R
 54f88fb1b657c8762f22628476c0aee0 *R/vpca_clustering.R
-051197c97d83f01382b5bf131b1add32 *build/partial.rdb
+8849c27d4b997046281178d2a2953d24 *build/partial.rdb
 552332e3a0904a7444911d2d18963faa *data/ArticularlyWordRecognition.RData
 2440f4892eb8af722910301136096d63 *data/AtrialFibrillation.RData
 764a5ce6aa9c81b21b91c8a5e2d62b8a *data/BasicMotions.RData
